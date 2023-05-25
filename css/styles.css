@@ -1,0 +1,26 @@
+.bg-gray{
+    background: gray;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    /*grid-template-rows: 300px 300px;*/
+    grid-gap: 50px;
+
+    padding: 30px;
+}
+
+article{
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+figure{
+    margin: auto;
+    background: darkred;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
