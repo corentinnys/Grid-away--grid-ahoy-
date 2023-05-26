@@ -16,12 +16,15 @@ article{
     padding: 20px;
     text-align: center;
 }
+.w-100{
+    width: 100%;
+}
 figure{
     margin: auto;
-    background: rgb(229,229,229);
+   /* background: rgb(229,229,229);*/
     height: 100px;
     width: 100px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
 }
 
 button{
