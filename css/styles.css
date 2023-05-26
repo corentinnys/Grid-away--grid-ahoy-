@@ -1,5 +1,5 @@
 .bg-gray{
-    background: gray;
+    background: rgb(229,229,229);
 }
 
 .grid-container {
@@ -14,12 +14,11 @@
 article{
     background: white;
     padding: 20px;
-    border: 1px solid black;
     text-align: center;
 }
 figure{
     margin: auto;
-    background: darkred;
+    background: rgb(229,229,229);
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -34,4 +33,12 @@ button{
     color: white;
     background: gray;
     border:none;
+}
+
+.line{
+    border: 1px solid rgb(229,229,229);
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 60px;
 }
