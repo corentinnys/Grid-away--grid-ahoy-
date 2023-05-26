@@ -72,12 +72,16 @@ button:hover
 .line{
     border: 1px solid rgb(229,229,229);
     width: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 60px;
+
+    margin: 30px auto;
+
 }
 
+.burger-menu{
+    display: none;
 
+}
+.none{visibility: hidden}
 @media screen and (max-width: 1024px){
     .navbar{display: block}
 
@@ -89,7 +93,46 @@ button:hover
 
 @media screen and (max-width: 500px){
     .navbar{display: none}
+    .burger-menu{
+        display: block;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        z-index: 6;
+    }
 
+    .burger-menu img{
+        width: 100%;
+    }
+    .burger-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background: black;
+        position: relative;
+        left: -100px;
+        border-radius: 10px;
+    }
+    .burger-menu ul li  {
+       padding: 10px;
+        margin:10px;
+    }
+    .burger-menu ul li a {
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+
+    }
+    .burger-menu img:active+nav{
+        visibility: visible;
+    }
+    .burger-menu img:active+nav ul{
+        left: 10px;
+        transition: all 1s ease-in-out;
+        -webkit-transition:all 1s ease-in-out;
+
+
+    }
     .grid-container {
         grid-template-columns: 100%  ;
         grid-auto-rows: auto auto auto auto auto auto auto auto;
